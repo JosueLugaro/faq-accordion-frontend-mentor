@@ -1,23 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const desktopBackground = process.env.PUBLIC_URL + "/images/background-pattern-desktop.svg"
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="underline">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-[#F9F0FF] h-screen">
+      <img className="w-screen" src={desktopBackground} alt="background art"/>
     </div>
   );
 }
