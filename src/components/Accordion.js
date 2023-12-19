@@ -12,12 +12,12 @@ const Accordion = ({ title, content }) => {
   return (
     <div>
       <div onClick={handleOpenCloseClick} className="flex items-center justify-between">
-        <h1>{ title }</h1>
+        <h1 className="text-[#2F1533] font-semibold text-lg">{ title }</h1>
         <img src={open ? minusIcon : plusIcon} alt="open or minus icon"/>
       </div>
       { open && (
-          <div>
-            <p>{ content }</p>
+          <div className="mt-4">
+            <p className="text-base text-[#8C6991] font-normal">{ content }</p>
           </div>
         )
       }
