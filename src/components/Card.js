@@ -6,7 +6,7 @@ const Card = ({ header }) => {
   const FAQS = useFAQS()
 
   return (
-    <div className="bg-white p-5 rounded-2xl shadow-2xl">
+    <div className="bg-white p-5 rounded-2xl shadow-2xl mx-3 sm:mx-auto">
       <Header text={header}/>
       <div className="mt-6">
         {
