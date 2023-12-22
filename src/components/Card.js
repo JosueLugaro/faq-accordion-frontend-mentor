@@ -7,7 +7,7 @@ const Card = ({ header }) => {
 
   return (
     <div className="bg-white p-5 rounded-2xl shadow-2xl">
-      <Header text="FAQs"/>
+      <Header text={header}/>
       <div className="mt-6">
         {
           FAQS.map(({ title, content }, index) => {
